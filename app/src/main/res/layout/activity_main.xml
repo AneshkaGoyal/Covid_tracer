@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.scrounger.countrycurrencypicker.library.Buttons.CountryCurrencyButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:country_code="US"
+        app:show_currency="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TotalCases"
+        android:layout_below="@id/button"
+        android:text="Total"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textColor="#2200fd"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RecoverdCases"
+        android:layout_below="@id/TotalCases"
+        android:text="Recovered"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textColor="#00fd51"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DeadCases"
+        android:layout_below="@id/RecoverdCases"
+        android:text="Dead"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textColor="#fd0054"/>
+
+
+</RelativeLayout>
